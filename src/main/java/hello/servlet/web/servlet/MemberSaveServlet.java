@@ -19,6 +19,9 @@ public class MemberSaveServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("MemberSaveServlet.service");
 
+        resp.setContentType("text/html");
+        resp.setCharacterEncoding("utf-8");
+
         String username = req.getParameter("username");
         int age = Integer.parseInt(req.getParameter("age"));
 
