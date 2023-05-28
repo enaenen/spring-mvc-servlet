@@ -43,6 +43,7 @@ public class FrontControllerServletV3 extends HttpServlet {
         }
 
         //paramMap
+        // Request Attribute TO Map<string, string>
         Map<String, String> paramMap = createParamMap(request);
         ModelView mv = controller.process(paramMap);
 
