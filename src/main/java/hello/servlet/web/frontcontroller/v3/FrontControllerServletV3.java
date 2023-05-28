@@ -52,7 +52,7 @@ public class FrontControllerServletV3 extends HttpServlet {
     }
 
     //실제 물리 view 이름을 만들어서 반환
-    private static MyView viewResolver(String viewName) {
+    private MyView viewResolver(String viewName) {
         return new MyView("/WEB-INF/views/" + viewName + ".jsp");
     }
 
